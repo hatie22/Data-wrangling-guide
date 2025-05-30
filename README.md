@@ -41,6 +41,7 @@ df.head()
 Goal: Fix issues such as missing values, duplicates, and incorrect formats.
 
 Puzzle Analogy: Remove pieces that don’t belong, fix bent pieces, and group edges.
+'''import pandas as pd
 # Drop duplicates and fill missing prices
 df = df.drop_duplicates()
 df['price'] = df['price'].fillna(df['price'].mean())
