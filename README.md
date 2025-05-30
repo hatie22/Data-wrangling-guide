@@ -42,7 +42,7 @@ Goal: Fix issues such as missing values, duplicates, and incorrect formats.
 
 Puzzle Analogy: Remove pieces that don’t belong, fix bent pieces, and group edges.
 '''import pandas as pd
-# Drop duplicates and fill missing prices
+Drop duplicates and fill missing prices
 df = df.drop_duplicates()
 df['price'] = df['price'].fillna(df['price'].mean())
 
@@ -58,11 +58,11 @@ In Practice:
 - Change data types
 
 - Normalize data (scaling, log-transform, etc.)
-'''df['total_sales'] = df['quantity'] * df['price']
+'''import pandas as pd
+  df['total_sales'] = df['quantity'] * df['price']
 df['date'] = pd.to_datetime(df['date'])
 
 4. Data Validation
-
 Goal: Ensure data is accurate and consistent before use.
 
 Puzzle Analogy: Double-check each piece fits and belongs to the right section.
@@ -118,6 +118,6 @@ In Practice:
 
 ## Final Thoughts
 
-Mastering data wrangling is essential for any analyst or data scientist. Just like you wouldn’t trust a puzzle with missing or wrong pieces, you shouldn’t trust insights from unclean data. By applying the five core steps — discovery, cleaning, transformation, validation, and publishing — you can turn a chaotic pile of data into a clear, actionable picture.
+Mastering data wrangling is essential for any analyst or data scientist. Just like you wouldn’t trust a puzzle with missing or wrong pieces, you shouldn’t trust insights from unclean data. By applying the five core steps — discovery, cleaning, transformation, validation, and publishing you can turn a chaotic pile of data into a clear, actionable picture.
 
 Always remember: the quality of your data determines the quality of your decisions.
