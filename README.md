@@ -22,7 +22,7 @@ Goal: Explore and understand the data to identify its structure and problems.
 
 Puzzle Analogy: Dumping out all the puzzle pieces on a table. You check for shapes, colors, and how many corner or edge pieces you have.
 
-#In Practice:
+# In Practice:
 - Understand where the data came from.
 
 - Inspect data types and structures.
@@ -41,33 +41,34 @@ df.head()
 Goal: Fix issues such as missing values, duplicates, and incorrect formats.
 
 Puzzle Analogy: Remove pieces that don’t belong, fix bent pieces, and group edges.
-'''import pandas as pd
+
 Drop duplicates and fill missing prices
 df = df.drop_duplicates()
 df['price'] = df['price'].fillna(df['price'].mean())
-
+-
 
 3. Data Transformation
 Goal: Reshape, normalize, and enrich the data to suit analysis.
 
 Puzzle Analogy: Rotate pieces, sort by color, and start assembling sections.
 
-In Practice:
+# In Practice:
 - Create new columns
 
 - Change data types
 
 - Normalize data (scaling, log-transform, etc.)
-'''import pandas as pd
-  df['total_sales'] = df['quantity'] * df['price']
-df['date'] = pd.to_datetime(df['date'])
+
+df['total_sales'] = df['quantity'] * df['price']
+df['date'] = pd.to_datetime(df['date']) 
+- 
 
 4. Data Validation
 Goal: Ensure data is accurate and consistent before use.
 
 Puzzle Analogy: Double-check each piece fits and belongs to the right section.
 
-In Practice:
+# In Practice:
 
 - Check for outliers
 
@@ -75,22 +76,25 @@ In Practice:
 
 - Use assertions or automated tests
 
-''' assert df['price'].min() >= 0
+assert df['price'].min() >= 0
 assert df['quantity'].dtype == int
+- 
 
 
 5. Data Publishing
-
 Goal: Make the cleaned data available for use in analysis or reporting.
 
 Puzzle Analogy: Frame the completed puzzle and hang it up.
 
-In Practice:
+# In Practice:
 
 - Save the cleaned dataset
 
 - Feed it into a dashboard or analytics pipeline
-''' df.to_csv('cleaned_sales_data.csv', index=False)
+  
+df.to_csv('cleaned_sales_data.csv', index=False)
+-
+  
 
 ## Why Data Wrangling Matters
 
