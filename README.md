@@ -122,6 +122,6 @@ df.to_csv('cleaned_sales_data.csv', index=False)
 
 ## Final Thoughts
 
-Mastering data wrangling is essential for any analyst or data scientist. Just like you wouldn’t trust a puzzle with missing or wrong pieces, you shouldn’t trust insights from unclean data. By applying the five core steps — discovery, cleaning, transformation, validation, and publishing you can turn a chaotic pile of data into a clear, actionable picture.
+Mastering data wrangling is essential for any analyst or data scientist. Just like you wouldn’t trust a puzzle with missing or wrong pieces, you shouldn’t trust insights from unclean data. By applying the five core steps: discovery, cleaning, transformation, validation, and publishing you can turn a chaotic pile of data into a clear, actionable picture.
 
 Always remember: the quality of your data determines the quality of your decisions.
